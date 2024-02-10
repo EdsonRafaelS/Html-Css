@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groumping tags</title>
+    <style>
+        body{
+            background-color: lightgrey;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        header{
+            background-color: white;
+            padding: 20px;
+            margin: 2px;
+            border-radius: 60px 10px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.615);
+            margin-bottom: 10px;
+        }
+        article{
+            background-color: lightgray;
+            margin: 20px;
+            padding: 10px;
+        }
+
+        article > aside{
+            background-color: rgb(178, 176, 176);
+            color: rgb(1, 122, 122);
+            padding-left: 20px;
+        }
+
+        main{
+            background-color: white;
+            height: 300px;
+            color: rgb(1, 122, 122);
+            border-radius: 10px 100px 10px 100px;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.615);
+            margin-bottom: 10px;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px;
+        }
+        
+        nav{
+            background-color: rgb(147, 147, 147);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.353);
+        }
+
+        a{
+            margin: auto;
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+            margin-right: 25px;
+        }
+
+        header > h1{
+            box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.288);
+            padding-left: 10px;
+        }
+
+        section > p {
+            margin: 10px;
+            color: rgb(1, 122, 122);
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+
+        .bola{
+            height: 80px;
+            width: 80px;
+            border-radius: 360px;
+            background-color: white;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="Noticias">
+            <article>
+                    <h1>Noticia sobre o Brasil</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima esse quod neque reprehenderit beatae excepturi vitae, dolorem quas ex illo! Illum alias in quos atque nesciunt mollitia. Neque, saepe illo!</p>
+                <aside>
+                    Roberto Dinamite Machade de Asís
+                </aside>
+            </article>
+                
+        </section>
+    </main>
+    <div class="bola"></div>
+    <footer>
+        Desenvolvido pelo Edson Rafael
+    </footer>
+</body>
+</html>

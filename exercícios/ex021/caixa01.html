@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+            border-width: 10px;
+            border-style: solid;
+            border-color: black;
+
+
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+
+            /*Tudo isso acima, pode ser simplificado em apenas uma linhas, caso o padding seje apenas um valor, para todo o componente.*/
+            /*Dessa formar...*/
+            padding: 10%;
+
+            /*Mais*/
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+
+            /*Tudo isso acima, pode ser simplificado em apenas uma linhas, caso o margin seje apenas um valor, para todo o componente.*/
+            /*Dessa formar...*/
+            margin: auto;
+            
+            outline: dashed 10px rgb(255, 0, 0);
+        }
+        /*Box-level ^ */
+
+        a{
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            
+            /*style, tamanho, color*/
+            border: solid 10px red;
+
+            padding-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+
+            /*abaixo, esquerda, cima, direita*/
+            padding: 10px 10px 10px 10px;
+            
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+
+            /*abaixo, esquerda, cima, direita*/
+            margin: 10px 10px 10px 10px; 
+
+            /*tamanho, style, cor*/
+            outline: 5px dashed salmon;
+
+            display: block; /*do inlne para block*/
+            display: inline-block; /* permite o inline, ter algmas funções de block */
+        }
+        /*Iniline-level ^*/
+
+        a:hover{
+            border-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa Box-Level</h1>
+    <p>Parágrafo também são exemplos de box-level, mas os <a href="#">links são exemplos de inline-level</a>. Vamos ver como  tudo isso funciona.</p>
+
+
+</body>
+</html>
